@@ -81,6 +81,7 @@ body {
     align-items: center;
     max-width: 1100px;
     flex-wrap: wrap; 
+    margin-top: 50px;
 }
 
 .container .card {
@@ -160,6 +161,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .son {
@@ -167,7 +169,6 @@ body {
     justify-content: center;
     align-items: center;
     outline: none;
-    
     border: none;
     cursor: pointer;
     margin: 25px;
@@ -256,31 +257,3 @@ body {
     display: block;
     transform: scale(0.98);
 }
-/*
-.social ul {
-    display: flex;
-    justify-content: center;
-}
-.social ul li {
-    list-style: none;
-   
-}
-.social ul li a i {
-    font-size: 2em;
-    margin: 10px;
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ebf5fc;
-    box-shadow: 5px 5px 8px #ebf5fc,
-    -5px -5px 8px #eff3f9;  
-}
-.social ul li a:hover {
-    box-shadow: inset 5px 5px 8px #ebf5fc,
-    -5px -5px 8px #eff3f9;;
-}
-*/
