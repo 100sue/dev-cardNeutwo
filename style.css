@@ -199,7 +199,7 @@ body {
     color: rgba(0, 172, 238, 1);
 }
 
-/*-------  Descrption  -----------*/
+/*-------  Description  -----------*/
 
 .explication {
     display: flex;
@@ -256,4 +256,133 @@ body {
 .explication .btn:hover span {
     display: block;
     transform: scale(0.98);
+}
+
+/*-------  Contact Me  -----------*/
+
+.liquid {
+    position: relative;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liquid .drop {
+    position: relative;
+    width: 525px;
+    height: 525px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 53% 47% 29% 71% / 44% 42% 58% 56% ;
+}
+.liquid .drop:hover {
+    border-radius: 50%;
+}
+.liquid .drop::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+} 
+.liquid .drop::after {
+    content: '';
+    position: absolute;
+    top: 68px;
+    left: 178px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+} 
+.liquid .drop .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.liquid .drop .content h2 {
+    position: relative;
+    color: #333;
+    font-size: 1.5em;
+}
+.liquid .drop .content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.liquid .drop .content form .inputbox {
+    position: relative;
+    width: 225px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+                inset -2px -5px 10px rgba(255, 255, 255, 1),
+                        15px 15px 10px rgba(0, 0, 0, 0.05),
+                        15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+}
+.liquid .drop .content form .inputbox::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.liquid .drop .content form .inputbox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.liquid .drop .content form .inputbox textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.liquid .drop .content form .inputbox input[type="submit"] {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+
+}
+.liquid .drop .content form .inputbox:last-child {
+    background: blue;
+    width: 120px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+                inset -2px -5px 10px rgba(255, 255, 255, 1),
+                15px 15px 10px rgba(0, 0, 0, 0.05),
+                15px 10px 15px rgba(0, 0, 0, 0.025);
+    transition: 0.5s;
+}
+.liquid .drop .content form .inputbox:last-child:hover {
+    width: 150px;
+
 }
