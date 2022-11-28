@@ -29,7 +29,7 @@ ul {
 /* ------------ Scroll bar : new design ------------ */
 ::-webkit-scrollbar {
     width: 20px;
-    background: linear-gradient(to bottom right,  #99cbf3, #eef1f1);
+    background: linear-gradient(to bottom right,  #7ad4e0, #eef1f1);
 }
 ::-webkit-scrollbar-thumb {
     
@@ -45,7 +45,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #03a9f4;
+    background: #32A3B1;
 }
 
 /* ------ adapted for firefox ------ */
@@ -300,6 +300,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 .liquid .drop {
     position: relative;
@@ -411,14 +412,70 @@ ul {
     background: #32A3B1;
     width: 120px;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
-                inset -2px -5px 10px rgba(255, 255, 255, 1),
                 15px 15px 10px rgba(0, 0, 0, 0.05),
                 15px 10px 15px rgba(0, 0, 0, 0.025);
     transition: 0.5s;
 }
 .liquid .drop .content form .inputbox:last-child:hover {
     width: 150px;
-
+}
+.btns {
+    position: absolute;
+    right: -120px;
+    bottom: 0px;
+    width: 120px;
+    height: 120px;
+    background: #c61dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05),
+    15px 25px 10px rgba(190, 1, 254, 0.1),
+    15px 20px 20px rgba(190, 1, 254, 0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 45% 56% 62% 38% / 57% 55% 45% 43%;
+    transition: 0.25s;
+}
+.btns:hover {
+    border-radius: 50%;
+}
+.btns::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.btns.linkedin {
+    bottom: 150px;
+    right: -120px;
+    width: 90px;
+    height: 90px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 41% 37%;
+    box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05),
+    15px 25px 10px rgba(1, 180, 255, 0.1),
+    15px 20px 20px rgba(1, 180, 255, 0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    background: #32A3B1;
+}
+.btns.linkedin::before {
+    left: 20px;
+    width: 15px;
+    height: 15px;
+}
+.btns.linkedin:hover {
+    border-radius: 50%;
 }
 
 /*------- Media social 2 -----------*/
