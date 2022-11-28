@@ -16,6 +16,14 @@ body {
     background: #ebf5fc;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
 
 
 /* ------------ Scroll bar : new design ------------ */
@@ -168,18 +176,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: none;
-    border: none;
+    
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    color: #696969;
     cursor: pointer;
     margin: 25px;
     height: 100px;
     width: 100px;
     background: #ebf5fc;
     font-size: 32px;
-    border-radius: 50px;
-    box-shadow: 12px 12px 16px 0px rgba(0, 0, 0, 0.25),
-                -8px -8px 12px 0px rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
+                -4px -4px 6px #fff;
+    border-radius: 50%;
 }
+
 .son a {
     text-decoration: none;
     color: rgba(128, 128, 128, 1);
@@ -189,8 +201,11 @@ body {
     color: rgba(128, 128, 128, 1);
 }
 
+
+
 .son.git:hover a{
     color: #ff560f;
+    
 }
 .son.lin:hover a{
     color: #2868B2;
@@ -211,7 +226,7 @@ body {
     text-align: center;
 }
 
-.explication .card {
+.explication .card2 {
     width: 1100px;
     margin-bottom: 60px;
     border-radius: 40px;
@@ -229,8 +244,8 @@ body {
 }
 .explication p {
     color: #777;
-    font-size: 1.5em;
-    font-family: Dancing script, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
     margin-top: 15px;
     
 }
@@ -385,4 +400,48 @@ body {
 .liquid .drop .content form .inputbox:last-child:hover {
     width: 150px;
 
+}
+
+/*------- Media social 2 -----------*/
+.box-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box ul li {
+    list-style: none;
+}
+.box li  {
+    cursor: pointer;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    color: #696969;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
+                -4px -4px 6px #fff;
+    border-radius: 50%;
+}
+.box li a {
+    text-decoration: none;
+}
+.box i {
+    font-size: 40px;
+}
+.box li:hover   {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+                -4px -4px 10px #fff;   
+}
+.box li:focus {
+    outline: none;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+                -4px -4px 10px #fff,
+                inset 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+                inset -4px -4px 10px #fff;   
+}
+.box li:hover,
+.box li:focus {
+    color: darkturquoise;
 }
