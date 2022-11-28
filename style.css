@@ -235,11 +235,28 @@ ul {
     box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
                  6px 6px 20px rgba(0, 0, 0, 0.1);
 }
+.explication .box {
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 40px;
+    padding: 40px;
+    font-family: Dancing script, sans-serif;
+    position: relative;
 
+}
+
+.explication .box::before {
+    font-size: 30px;
+    content: "Consuming an Api";
+    position: absolute;
+    top: -26px;
+    left: 29px;
+    padding: 5px 10px;
+    background-color: #ebf5fc;
+    color: #32A3B1;
+}
 .explication h5 {
     color: #777;
     font-size: 2em;
-    margin-top: 10px;
     
 }
 .explication p {
@@ -247,6 +264,7 @@ ul {
     font-size: 1.2em;
     margin-bottom: 15px;
     margin-top: 15px;
+    
     
 }
 .explication .btn {
@@ -334,7 +352,7 @@ ul {
 }
 .liquid .drop .content h2 {
     position: relative;
-    color: #333;
+    color: #777;
     font-size: 1.5em;
 }
 .liquid .drop .content form {
@@ -389,7 +407,7 @@ ul {
 
 }
 .liquid .drop .content form .inputbox:last-child {
-    background: blue;
+    background: #32A3B1;
     width: 120px;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
                 inset -2px -5px 10px rgba(255, 255, 255, 1),
