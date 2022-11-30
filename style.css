@@ -615,6 +615,27 @@ html::-webkit-scrollbar-thumb {
 }
 
 
+.credits{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 100px;
+    color:#777;
+    border-radius: 40px;
+    padding: 20px 10px;
+    background: #ebf5fc;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                 6px 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    
+}
+
+.credits span{
+    color: #32A3B1;
+}
+
+
+
+
 @media (max-width: 991px) {
     .clip video {
         max-width: 90%;
